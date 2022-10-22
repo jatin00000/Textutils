@@ -1,5 +1,5 @@
 import "./App.css";
-import About from "./components/About";
+// import About from "./components/About";
 import Navbar from "./components/Navbar";
 import TextForm from "./components/TextForm";
 import React, { useState } from "react";
@@ -38,7 +38,7 @@ function App() {
   return (
     <>
       {/* Here see that we are passing function which are passing function to the component and it will act then.*/}
-      <Router>
+      {/* <Router> */}
         <Navbar
           mode={Mode}
           title="TextUtils"
@@ -48,20 +48,20 @@ function App() {
         <Alert alert={alert} />
 
         <div className="container my-3">
-          <Switch>
-            <Route exact path="/about">
-              <About />
-            </Route>
-            <Route exact path="/">
+          {/* <Switch> */}
+            {/* <Route exact path="/about"> */}
+              {/* <About /> */}
+            {/* </Route> */}
+            {/* <Route exact path="/"> */}
               <TextForm
                 heading="Enter text to Analyse below"
                 Mode={Mode}
                 showalert={showalert}
               />
-            </Route>
-          </Switch>
+            {/* </Route> */}
+          {/* </Switch> */}
         </div>
-      </Router>
+      {/* </Router> */}
     </>
   );
 }
